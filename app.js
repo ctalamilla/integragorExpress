@@ -21,7 +21,7 @@ function cargarViews (listaVistas){
         let URL_ARCHIVO = path.resolve(__dirname, relPath)
         //console.log(URL_ARCHIVO)
         let nombreVista = '/'+archivo.split(".")[0]
-        console.log(nombreVista)
+        //console.log(nombreVista)
         app.get(nombreVista, (req,res)=> {
             let htmlpath = path.resolve(URL_ARCHIVO)
             res.sendFile(htmlpath)
